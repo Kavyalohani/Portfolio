@@ -1,0 +1,330 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kavya's Portfolio</title>
+  <style>< 
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: rgb(6, 6, 78);
+      color: white;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(44, 44, 122);
+    }
+    nav ul{
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li{
+      list-style: none;
+      margin: 0 23px;
+    }
+    nav ul li a{
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav ul li a:hover{
+      color: rgb(161, 161, 255);
+    }
+    .left{
+      font-size: 1.5rem;
+    }
+    .l{
+      font-size: 1.0rem;
+      color: beige;
+    }
+    .firstsection{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 140px 0;
+    }
+    .firstsection > div{
+      width: 40%;
+    }
+    .leftsection{
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    .rightsection img{
+      width: 100%;
+      border-radius: 10px;
+    }
+    .purple{
+      color: blueviolet;
+    }
+    #element{
+      color: blueviolet;
+    }
+    main hr{
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 40px 84px;
+    }
+
+    /* Section 2: Work Experience */
+    .secondsection{
+      max-width: 80vw;
+      margin: auto;
+      padding: 40px 0;
+    }
+    .secondsection h1{
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    .text-grey{
+      color: grey;
+      font-size: 1.1rem;
+    }
+    .box{
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      margin-top: 50px;
+    }
+    .vertical{
+      background: white;
+      width: 2px;
+      height: 120px;
+      position: relative;
+    }
+    .vertical .title{
+      position: absolute;
+      top: 130px;
+      left: -60px;
+      width: 150px;
+      text-align: center;
+      font-size: 1rem;
+      color: white;
+    }
+    .vertical .desc{
+      position: absolute;
+      top: 160px;
+      left: -75px;
+      width: 200px;
+      font-size: 0.9rem;
+      color: lightgrey;
+      text-align: center;
+    }
+
+    /* Skills Section */
+    .skills{
+      max-width: 80vw;
+      margin: auto;
+      padding: 50px 0;
+    }
+    .skills h1{
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .skills-list{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .skill{
+      background: rgb(44, 44, 122);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+    }
+
+    /* Projects Section */
+    .projects{
+      max-width: 80vw;
+      margin: auto;
+      padding: 50px 0;
+    }
+    .projects h1{
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .project-grid{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .project-card{
+      background: rgb(44, 44, 122);
+      padding: 20px;
+      margin: 15px;
+      border-radius: 10px;
+      width: 250px;
+    }
+    .project-card img{
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    /* Contact Section */
+    .contact{
+      max-width: 80vw;
+      margin: auto;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .contact input, .contact textarea{
+      width: 80%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    .contact button{
+      padding: 10px 20px;
+      background: blueviolet;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .contact button:hover{
+      background: rgb(107, 49, 163);
+    }
+
+    /* Footer */
+    footer{
+      background: rgb(44, 44, 122);
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left"> Kavya's Portfolio</div>
+      
+      <div class="right">
+        <ul>
+          <li><a href="#home"> HOME </a></li>
+          <li><a href="#about"> ABOUT </a></li>
+          <li><a href="#services"> SERVICES </a></li>
+          <li><a href="#projects"> PROJECTS </a></li>
+          <li><a href="#contact"> CONTACT ME </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="firstsection" id="home">
+      <div class="leftsection">
+        Hii, My name is <span class="purple">Kavya</span> 
+        <div> I'm a passionate </div>
+        <span id="element"></span>
+      </div>
+      <div class="rightsection"><img src="bg.webp" alt="Profile Image"></div>
+    </section>
+    <hr>
+
+    <!-- Work Experience Section -->
+    <section class="secondsection" id="about">
+      <span class="text-grey"> What I have done so far </span>
+      <h1> Work Experience</h1>
+      <div class="box"> 
+        <div class="vertical">
+          <div class="title">Intern - HR Manager</div>
+          <div class="desc">Worked as an HR at SGCA technologies.</div>
+        </div>
+        <div class="vertical">
+          <div class="title">Participated in hackathons</div>
+          <div class="desc">SIH, and other colleges hackathons</div>
+        </div>
+        <div class="vertical">
+          <div class="title">Student Projects</div>
+          <div class="desc">Built portfolio and projects.</div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Skills Section -->
+    <section class="skills" id="services">
+        <span class="text-grey"> What I know </span>
+      <h1>My Skills</h1>
+      <div class="skills-list">
+        <div class="skill">C language</div>
+        <div class="skill">C++</div>
+        <div class="skill">HTML, CSS, JavaScript</div>
+        <div class="skill">NODE.js</div>
+        <div class="skill">DSA</div>
+        <div class="skill">Python</div>
+        <div class="skill">UI/UX Design</div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <span class="text-grey"> What all I had done </span>
+      <h1>Projects</h1>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/250x150" alt="Project 1">
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal portfolio built with HTML, CSS, and JS.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/250x150" alt="Project 2">
+          <h3>-----</h3>
+          <p>-------</p>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/250x150" alt="Project 3">
+          <h3>------</h3>
+          <p>------.</p>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+    <span class="text-grey"> Where to contact me </span>
+      <h1>Contact Me</h1>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <br>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kavya | All Rights Reserved</p>
+  </footer>
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: [ 'Web Developer.', 'Learner.'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+</body>
+</html>
